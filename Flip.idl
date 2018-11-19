@@ -1,0 +1,21 @@
+module FlipApp
+{
+	interface Flip
+	{
+		string current_game();
+		boolean current_banker(in string account);
+		void add_banker(in string account);
+		string join_game(in string account, in long secretNum);
+		double check_time();
+		void start_game(in string bet_amount, in long duration);
+		string current_gameusers();
+		string return_banker();
+		string current_bet();
+		void banker_leave();
+		void send_hash(in string hash);
+		string win_amount();
+		string receive_winner();
+		string get_logs();
+	};
+
+};
